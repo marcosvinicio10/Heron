@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heron Tech - Software Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="cursor-text"></div>
+
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Heron Tech</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-code logo-icon"></i>
+            Heron Tech
+        </a>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#process">Process</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="glass-card"></div>
+            <div class="glass-card"></div>
+            <div class="glass-card"></div>
+        </div>
+        <div class="particles"></div>
+        <div class="hero-content">
+            <h1>Innovative Software Solutions</h1>
+            <p class="hero-subtitle">Transforming ideas into powerful digital experiences</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button primary">Get Started</a>
+                <a href="#services" class="cta-button secondary">Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="number">100+</span>
+                    <span class="label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="number">50+</span>
+                    <span class="label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="number">5+</span>
+                    <span class="label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Services</h2>
+            <p class="section-subtitle">Comprehensive software solutions for your business needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-globe service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Custom websites and web applications built with modern technologies</p>
+                <ul class="service-features">
+                    <li>Responsive Design</li>
+                    <li>E-commerce Solutions</li>
+                    <li>Content Management</li>
+                </ul>
+                <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>Mobile Apps</h3>
+                <p>Native and cross-platform mobile applications for iOS and Android</p>
+                <ul class="service-features">
+                    <li>iOS Development</li>
+                    <li>Android Development</li>
+                    <li>Cross-platform Apps</li>
+                </ul>
+                <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-gamepad service-icon"></i>
+                <h3>Game Development</h3>
+                <p>Engaging 3D games and interactive experiences</p>
+                <ul class="service-features">
+                    <li>3D Game Development</li>
+                    <li>AR/VR Experiences</li>
+                    <li>Game Porting</li>
+                </ul>
+                <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="technologies">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Technologies We Use</h2>
+            <p class="section-subtitle">Cutting-edge tools and frameworks for modern development</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                <h3>Frontend</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-vuejs"></i>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-angular"></i>
+                        <span>Angular</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                <h3>Backend</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="300">
+                <h3>Mobile</h3>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <i class="fab fa-swift"></i>
+                        <span>Swift</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-android"></i>
+                        <span>Kotlin</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>React Native</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Process</h2>
+            <p class="section-subtitle">How we bring your ideas to life</p>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step" data-aos="fade-right">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Discovery</h3>
+                    <p>We analyze your requirements and create a detailed project plan</p>
+                </div>
+            </div>
+            <div class="process-step" data-aos="fade-left">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Design</h3>
+                    <p>Our designers create intuitive and engaging user interfaces</p>
+                </div>
+            </div>
+            <div class="process-step" data-aos="fade-right">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Development</h3>
+                    <p>We build your solution using the latest technologies</p>
+                </div>
+            </div>
+            <div class="process-step" data-aos="fade-left">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Testing</h3>
+                    <p>Rigorous testing ensures quality and performance</p>
+                </div>
+            </div>
+            <div class="process-step" data-aos="fade-right">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Launch</h3>
+                    <p>We deploy your solution and provide ongoing support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Client Testimonials</h2>
+            <p class="section-subtitle">What our clients say about us</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Heron Tech delivered an exceptional web application that exceeded our expectations. Their team was professional and responsive throughout the project.</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Client">
+                    <div class="author-info">
+                        <h4>John Smith</h4>
+                        <p>CEO, Tech Solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The mobile app they developed for us has received outstanding feedback from our users. The attention to detail and user experience is remarkable.</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client">
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Founder, AppWorks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Working with Heron Tech was a pleasure. They understood our vision and delivered a game that our players love. Highly recommended!</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client">
+                    <div class="author-info">
+                        <h4>Michael Brown</h4>
+                        <p>Game Director, PlayTech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">Let's discuss your project</p>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" data-aos="fade-right">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <select name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile Apps</option>
+                        <option value="game">Game Development</option>
+                    </select>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <span class="focus-border"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            <div class="contact-info" data-aos="fade-left">
+                <div class="info-card">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Silicon Valley, CA</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@herontech.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                Heron Tech
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <a href="#services">Web Development</a>
+                    <a href="#services">Mobile Apps</a>
+                    <a href="#services">Game Development</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#process">Our Process</a>
+                    <a href="#testimonials">Testimonials</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <a href="#contact">Get in Touch</a>
+                    <a href="#contact">Support</a>
+                    <a href="#contact">Careers</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Heron Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
