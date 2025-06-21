@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heron Tech - Software Development</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Heron Technologies</title>
+    <link rel="icon" type="image/jpeg" href="/public/favicon.jpg">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Fallback styles for mobile menu */
+        @media (max-width: 768px) {
+            .menu-btn {
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                position: relative !important;
+                z-index: 1001 !important;
+                background: rgba(255, 255, 255, 0.1) !important;
+                border: 1px solid rgba(255, 255, 255, 0.2) !important;
+                padding: 0.5rem !important;
+                border-radius: 8px !important;
+                cursor: pointer !important;
+                min-width: 40px !important;
+                min-height: 40px !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            
+            .nav-links {
+                display: none !important;
+            }
+            
+            .nav-links.active {
+                display: flex !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="cursor"></div>
@@ -20,23 +52,7 @@
         </div>
     </div>
 
-    <nav class="navbar">
-        <a href="#" class="logo">
-            <i class="fas fa-code logo-icon"></i>
-            Heron Tech
-        </a>
-        <div class="nav-links">
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Services</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#process">Process</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="menu-btn">
-            <div class="menu-btn__burger"></div>
-        </div>
-    </nav>
+    <div id="header-container"></div>
 
     <section id="home" class="hero">
         <div class="hero-background">
@@ -344,39 +360,48 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-code"></i>
-                Heron Tech
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <a href="#services">Web Development</a>
-                    <a href="#services">Mobile Apps</a>
-                    <a href="#services">Game Development</a>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <a href="#about">About Us</a>
-                    <a href="#process">Our Process</a>
-                    <a href="#testimonials">Testimonials</a>
-                </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <a href="#contact">Get in Touch</a>
-                    <a href="#contact">Support</a>
-                    <a href="#contact">Careers</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Heron Tech. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script>
+        // Initialize AOS when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing AOS...');
+            
+            // Initialize AOS
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100,
+                easing: 'ease-in-out'
+            });
+            
+            console.log('AOS initialized');
+            
+            // Test if AOS is working
+            setTimeout(() => {
+                const animatedElements = document.querySelectorAll('[data-aos]');
+                console.log('Found', animatedElements.length, 'animated elements');
+                
+                animatedElements.forEach((el, index) => {
+                    console.log(`Element ${index}:`, el.getAttribute('data-aos'), 'opacity:', getComputedStyle(el).opacity);
+                });
+            }, 1000);
+            
+            // Simple loader script
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(function() {
+                    loader.classList.add('fade-out');
+                    setTimeout(function() {
+                        if (loader && loader.parentNode) {
+                            loader.parentNode.removeChild(loader);
+                        }
+                    }, 500);
+                }, 2000);
+            }
+        });
+    </script>
+    <script type="module" src="index.js"></script>
 </body>
 </html> 

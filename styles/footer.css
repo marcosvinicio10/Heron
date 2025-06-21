@@ -1,0 +1,220 @@
+/* Footer Component Styles */
+
+.footer {
+    background: var(--background);
+    padding: 3rem 0 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-column h4 {
+    color: var(--light-text);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--gradient-1);
+    border-radius: 1px;
+}
+
+.footer-column a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-column a:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.footer-bottom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .footer-logo {
+        font-size: 1.3rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .footer-column h4 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+        color: var(--light-text);
+        font-weight: 600;
+    }
+
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+    }
+
+    .footer-column a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0;
+        margin-bottom: 0.3rem;
+        color: rgba(255, 255, 255, 0.6);
+        transition: all 0.3s ease;
+    }
+
+    .footer-column a:hover {
+        color: var(--light-text);
+        transform: translateX(5px);
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        font-size: 0.85rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0 1rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+        padding: 0 0.8rem;
+    }
+
+    .footer-logo {
+        font-size: 1.2rem;
+    }
+
+    .footer-links {
+        gap: 1.5rem;
+    }
+
+    .footer-column h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footer-column a {
+        font-size: 0.85rem;
+        padding: 0.25rem 0;
+        margin-bottom: 0.25rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .footer {
+        padding: 1.5rem 0 1rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-links {
+        gap: 1.5rem;
+    }
+} 
